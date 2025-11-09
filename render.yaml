@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: multi-module-admin
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    rootDir: .
+    envVars:
+      - key: NODE_VERSION
+        value: 18
